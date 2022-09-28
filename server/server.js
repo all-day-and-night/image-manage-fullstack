@@ -26,7 +26,7 @@ const upload = multer({
 
 app.use("/uploads", express.static('uploads'));
 
-app.post("/upload", upload.single("imageTest"), (req, res) => {
+app.post("/upload", upload.single("image"), (req, res) => {
     console.log(req.file);
     res.json({result:req.file});
 })
