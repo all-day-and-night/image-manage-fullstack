@@ -36,7 +36,7 @@ const LoginPage = () => {
             marginLeft: "auto",
             marginRight: "auto" 
         }}>
-            <h3>Register Page</h3>
+            <h3>Login Page</h3>
             <form onSubmit={loginHandler}>
                 <CustomInput label="ID" value={username} setValue={setUsername}/>
                 <CustomInput label="password" value={password} type="password" setValue={setPassword}/>
